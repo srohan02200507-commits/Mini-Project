@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+}
+
+.fintech-card {
+  @apply rounded-2xl border border-slate-200/80 bg-white/95 shadow-sm transition-all duration-200 dark:border-slate-800/90 dark:bg-slate-900/90;
+}
+
+.fintech-card-hover {
+  @apply fintech-card hover:border-indigo-300/80 hover:shadow-md dark:hover:border-indigo-700/70;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.55);
+}
+
